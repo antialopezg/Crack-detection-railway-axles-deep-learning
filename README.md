@@ -10,12 +10,12 @@ The method includes a two-dimensional convolutional neural network combined with
 ![NN_3 (1)](https://user-images.githubusercontent.com/79870718/182142485-8875126d-b221-4545-9a80-40efd3ef1958.png)
 
 
-# Abstract 
+## Abstract 
 Railway axle maintenance is key to avoid catastrophic failures. Nowadays, condition monitoring techniques are becoming more prominent in the industry to prevent from huge costs and damages to human lives. 
 
 In this work, signal processing techniques and Deep Learning models are proposed for effective railway axle crack detection based on vibration signals from accelerometers. To do so, several preprocessing steps, and different types of Neural Network architectures are discussed to design an accurate classification system. The resultant system converts the railway axle vibration signals into time-frequency domain representations, i.e. spectrograms, and, thus, train a two-dimensional convolutional neural networks to classify them depending on their cracks. This 2D-NN architecture, based on spectrograms, has been tested over 4 datasets achieving outperforming 0.93, 0.86, 0.75, 0.93 AUC scores showing a high level of reliability when classifying 4 different levels of defect.
 
-# Software implementation
+## Software implementation
 
 All source code used to generate the results and figures in the paper are in the following files:
 

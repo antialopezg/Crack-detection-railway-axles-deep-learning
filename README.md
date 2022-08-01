@@ -1,5 +1,4 @@
 # Railway axle crack diagnosis
-Config files for my GitHub profile.
 by Antía López Galdo, Alejandro Guerrero-López, Pablo M. Olmos and María Jesús Gómez García
 
 This paper has been submitted for publication in Reliability Engineering and System Safety.

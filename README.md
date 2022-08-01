@@ -1,4 +1,4 @@
-# Crack-detection-railway-axles-deep-learning
+# Railway axle crack diagnosis
 Config files for my GitHub profile.
 by Antía López Galdo, Alejandro Guerrero-López, Pablo M. Olmos and María Jesús Gómez García
 

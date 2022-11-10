@@ -1,19 +1,31 @@
-# Railway axle crack diagnosis
+# Detecting train driveshaft damages using accelerometer signals and Differential Convolutional Neural Networks
 by Antía López Galdo, Alejandro Guerrero-López, Pablo M. Olmos and María Jesús Gómez García
 
 This paper has been submitted for publication in Reliability Engineering and System Safety.
 
 We propose a novel method to classify vibration signals from accelerometers of railway axles. To do so, we propose to transform the vibration signals into spectrograms and work in the time-frequency domain, obtaining 3-layered images:
-![speccc](https://user-images.githubusercontent.com/79870718/182141897-51532c80-e556-4e41-ab1e-eeb0caeab74f.png)
+![speccc](https://user-images.githubusercontent.com/79870718/201116248-c2b36785-dc34-4275-bfac-9cfef760b1ac.png)
 
-The method includes a two-dimensional convolutional neural network combined with a multilayer perceptron to classify the spectrograms in 4 different classes. The model architecture is displayed in the following figure:
-![NN_3 (1)](https://user-images.githubusercontent.com/79870718/182142485-8875126d-b221-4545-9a80-40efd3ef1958.png)
+The method includes a two-dimensional differential convolutional neural network combined with a multilayer perceptron to classify the spectrograms in 4 different classes. The model architecture is displayed in the following figure:
+![Untitled 002](https://user-images.githubusercontent.com/79870718/201115910-d239b215-75ec-4589-b3c4-04b8b7c17f0c.jpeg)
 
 
 ## Abstract 
-Railway axle maintenance is key to avoid catastrophic failures. Nowadays, condition monitoring techniques are becoming more prominent in the industry to prevent from huge costs and damages to human lives. 
+Railway axle maintenance is critical to avoid catastrophic failures. Nowadays,
+condition monitoring techniques are becoming more prominent in the industry
+to prevent enormous costs and damage to human lives.
+This paper proposes the development of a railway axle condition monitoring
+system based on advanced 2D-Convolutional Neural Network (CNN) architectures applied to time-frequency representations of vibration signals. For this
+purpose, several preprocessing steps and different types of Deep Learning (DL)
+and Machine Learning (ML) architectures are discussed to design an accurate
+classification system. The resultant system converts the railway axle vibration signals into time-frequency domain representations, i.e., spectrograms, and,
+thus, trains a two-dimensional CNN to classify them depending on their cracks.
+The results showed that the proposed approach outperforms several alternative
+methods tested. The CNN architecture has been tested in 3 different wheelset
+assemblies, achieving AUC scores of 0.93, 0.86, and 0.75 outperforming any other
+architecture and showing a high level of reliability when classifying 4 different
+levels of defects.
 
-In this work, signal processing techniques and Deep Learning models are proposed for effective railway axle crack detection based on vibration signals from accelerometers. To do so, several preprocessing steps, and different types of Neural Network architectures are discussed to design an accurate classification system. The resultant system converts the railway axle vibration signals into time-frequency domain representations, i.e. spectrograms, and, thus, train a two-dimensional convolutional neural networks to classify them depending on their cracks. This 2D-NN architecture, based on spectrograms, has been tested over 4 datasets achieving outperforming 0.93, 0.86, 0.75, 0.93 AUC scores showing a high level of reliability when classifying 4 different levels of defect.
 
 ## Software implementation
 

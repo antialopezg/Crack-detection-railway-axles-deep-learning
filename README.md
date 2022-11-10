@@ -31,12 +31,12 @@ levels of defects.
 
 All source code used to generate the results and figures in the paper are in the following files:
 
-- 2DCNN_ref: contains the code about the main experiment in the paper.
+- 2D-CNN-Ref: contains the code implemented to develop the main experiment of the paper. This script is based on the design, training and testing of a two-dimensional differential convolutional neural network to classify spectrogram representations of the vibration series. This neural network is in turn applied to the spectrograms representing the healthy axle of the train, to provide the network with sufficient information to be able to differentiate standard system conditions from faulty ones.
 
-- 2DCNN: contains the code about the first alternative experiment in the paper.
+- 2D-CNN (no reference): contains the code developed to assess the influence of using the reference data in the selected model. It consists of the two-dimensional differential neural network applied only to the spectrograms. 
 
-- 1DCNN_LSTM: contains the code about the second alternative experiment in the paper.
+- 1D-CNN-LSTM-Ref: this script provides the design of the one-dimensional convolutional neural network combined with the long-short-term-memory applied to the vibration signal to exploit the time dependency. This experiment allows us to analyze the value provided by the use of time-frequency representations of the data instead of using the raw signals in the time domain.
 
-- mlmodel: contains the code about the third alternative experiment in the paper.
+- tsfresh-RF: the tsfresh library was used to extract features from temporal signals and reduce dimensionality. In this script, these features were used as input to a random forest classifier to analyze the advantages of deep learning vs. classical machine learning techniques.
 
-The data used in this study is publicly available. You should create a folder called data and download WS and F datasets. Due to their size, we do not upload them to this repo.
+The data used in this study is not publicly available. 
